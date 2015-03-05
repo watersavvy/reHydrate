@@ -1,0 +1,13 @@
+<%= simple_form_for(@refill) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :address %>
+    <%= f.input :tech %>
+    <%= f.input :cost %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
