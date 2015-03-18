@@ -1,6 +1,12 @@
-class RefillsController < ApplicationController
+  class RefillsController < ApplicationController
   before_action :set_refill, only: [:show, :edit, :update, :destroy]
 
+  
+  def home
+  end
+
+  def why
+  end
   # GET /refills
   # GET /refills.json
   def index

@@ -9,31 +9,23 @@
 
 <!-- Responsive, Isotope-based layout example -->
 
-<div class="row">
-  <div class="col-xs-12">
-    <input type="text" id="quicksearch" placeholder="Search Refills (start typing)" class="form-control">
-  </div>
-</div>
-
-<hr>
-
 <div class="row isotope-container">
 <% @refills.each do |refill| %>
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">Refill #<%= refill.id %></h3>
+        <h3 class="panel-title">Location #<%= refill.id %></h3>
       </div>
       <div class="panel-body">
         <dl>
 
+          <!-- // attempted to add name // -->
+            
           <dt>Address</dt>
           <dd><%= refill.address %></dd>
 
-
-          <dt>Pufication Technology</dt>
+          <dt>Contaminant Reduction Technology</dt>
           <dd><%= refill.tech %></dd>
-
 
           <dt>Cost Per Gallon</dt>
           <dd><%= refill.cost %></dd>
