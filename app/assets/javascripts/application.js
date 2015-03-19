@@ -15,5 +15,4 @@
 = require font-awesome-sprockets
 // = require jquery_ujs
 = require turbolinks
-//= require_tree .
-= require mapbox
+// = require_tree .
