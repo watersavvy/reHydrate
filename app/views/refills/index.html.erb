@@ -1,8 +1,11 @@
 <div class="page-header">
   <h1>
   <center>
-    Add Location
-    <%= link_to icon('plus'), new_refill_path, class: "btn btn-lg btn-success" %>
+     <%= form_tag("/refills", method: "get") do %>
+     
+     <%= text_field_tag(:q, ) %>
+     <%= submit_tag("Search") %>
+     <% end %>
   </center>
   </h1>
 </div>
