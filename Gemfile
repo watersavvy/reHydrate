@@ -1,6 +1,9 @@
 ruby '2.1.5'
 source 'https://rubygems.org'
 
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+#added after 1st Heroku deployment attempt to mitigate sprockets error
+
 gem 'font-awesome-sass'
 gem 'bootstrap-sass'
 gem 'simple_form'
