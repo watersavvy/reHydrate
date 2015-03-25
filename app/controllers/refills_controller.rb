@@ -10,7 +10,7 @@
   # GET /refills
   # GET /refills.json
   def index
-    @refills = Refill.all
+    @refills = Refill.where "address LIKE '%#{params[:q]}%'"
   end
 
   # GET /refills/1
