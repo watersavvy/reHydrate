@@ -12,7 +12,7 @@
 //
 // = require jquery
 // = require bootstrap-sprockets
-// = require font-awesome-sprockets
+= require font-awesome-sprockets
 // = require jquery_ujs
 // = require turbolinks
 // = require_tree .
