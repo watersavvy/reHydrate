@@ -3,9 +3,10 @@
 
   <div class="form-inputs">
     <!-- //attempted to add name// -->
-    <%= f.input :address, placeholder: "In most cases, this will be some type of grocery store. The name isn't necessary." %>
+    <%= f.input :name, placeholder: "In most cases, this will be the name of a grocery store." %>
+    <%= f.input :address, placeholder: "Please enter full address including zip code." %>
     <%= f.input :tech, placeholder: "Optional: sometimes this info is written on the station, otherwise management should have specs." %>
-    <%= f.input :cost, placeholder: "How much is a gallon refill? 59 cents should be entered .59 for example." %>
+    <%= f.input :cost, placeholder: "How much does a gallon refill cost? 59 cents should be entered .59 for example." %>
   </div>
 
   <div class="form-actions">

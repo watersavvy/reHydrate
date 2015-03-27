@@ -5,8 +5,6 @@
   def home
   end
 
-  def why
-  end
   # GET /refills
   # GET /refills.json
   def index
@@ -75,6 +73,6 @@
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def refill_params
-      params.require(:refill).permit(:address, :tech, :cost)
+      params.require(:refill).permit(:name, :address, :tech, :cost)
     end
 end
