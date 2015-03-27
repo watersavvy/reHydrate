@@ -2,11 +2,7 @@ Rails.application.routes.draw do
   
   root 'refills#home'
 
-  # resources :maps
-
   get("refills/home", { :controller => "refills", :action => "home" })
-
-  get("refills/why", { :controller => "refills", :action => "why" })
 
   resources :refills
 
